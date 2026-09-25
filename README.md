@@ -4,7 +4,7 @@ A family-friendly chatbot that lives in one HTML page. Moss remembers your chat 
 
 **Repo:** https://github.com/Glitchplays1/moss
 
-**Live page (after Pages is on):** https://glitchplays1.github.io/moss/
+**Live page:** https://glitchplays1.github.io/moss/
 
 ## Open it on your computer
 
@@ -12,28 +12,19 @@ A family-friendly chatbot that lives in one HTML page. Moss remembers your chat 
 2. Double-click the file
 3. Chat in the box at the bottom
 
-## This is already on GitHub
+## Memory storage
 
-The project lives in **Glitchplays1/moss**.
+Moss keeps memory in your browser:
 
-To update it later on your computer:
+- Chat history comes back after refresh
+- Facts you teach with `remember that ...`
+- Your name if you say `my name is ...`
+- Last topic for follow-ups like `who made it?`
+- **Download memory file** saves `moss-memory.json`
+- **Load memory file** restores that JSON on another computer
+- **Wipe all memory** clears storage on this device
 
-```bash
-git clone https://github.com/Glitchplays1/moss.git
-cd moss
-# edit files
-git add .
-git commit -m "Update Moss"
-git push
-```
-
-## Turn on the website
-
-1. Open https://github.com/Glitchplays1/moss
-2. Click **Settings** → **Pages**
-3. Set source to **GitHub Actions**
-4. Wait for the Action to finish (Actions tab)
-5. Open https://glitchplays1.github.io/moss/
+Memory stays on the computer you used. It is not uploaded to GitHub.
 
 ## What you can ask
 
@@ -44,17 +35,17 @@ git push
 - What is FNAF? then Who made it?
 - Give me a chocolate chip cookie recipe
 - remember that my favorite game is Minecraft
+- my name is Alex
+- what do you remember
+- forget Minecraft
 
 ## How it works
 
 Moss is HTML + CSS + JavaScript (not a giant cloud AI):
 
-- Remembers this chat in your browser
-- Saves facts you teach with `remember that ...`
-- Looks up Wikipedia when the browser allows it
-- Gives YouTube and Allrecipes links
-
-Subscriber counts change every day, so Moss gives a saved number plus a live search link.
+- Memory storage uses `localStorage`
+- Wikipedia lookups when the browser allows them
+- YouTube and Allrecipes search links
 
 ## Files
 
@@ -65,7 +56,3 @@ Subscriber counts change every day, so Moss gives a saved number plus a live sea
 | `README.md` | This guide |
 | `LICENSE` | License |
 | `.github/workflows/static.yml` | Publishes the site |
-
-## License
-
-See `LICENSE` in this repository.
