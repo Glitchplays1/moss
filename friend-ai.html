@@ -4,35 +4,21 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Moss — Your Friend AI</title>
+  <link rel="icon" href="moss-logo.png" type="image/png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Press+Start+2P&display=swap" rel="stylesheet" />
   <style>
     :root {
-      --grass: #5d9b3a;
-      --grass-dark: #3d6b24;
-      --dirt: #8b5a2b;
-      --sky: #7ec8e3;
-      --night: #0f1724;
-      --panel: #152033;
-      --panel-2: #1c2b44;
-      --text: #f4f7fb;
-      --muted: #9fb0c8;
-      --accent: #7dff9a;
-      --gold: #ffd56a;
-      --bubble-me: #2b6cb0;
-      --bubble-ai: #24344d;
+      --grass: #5d9b3a; --grass-dark: #3d6b24; --dirt: #8b5a2b; --sky: #7ec8e3;
+      --night: #0f1724; --panel: #152033; --panel-2: #1c2b44; --text: #f4f7fb;
+      --muted: #9fb0c8; --accent: #7dff9a; --gold: #ffd56a; --bubble-me: #2b6cb0; --bubble-ai: #24344d;
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
     html, body { height: 100%; }
-    body {
-      font-family: Nunito, system-ui, sans-serif;
-      background: radial-gradient(1200px 500px at 20% -10%, rgba(126,200,227,.25), transparent 50%), linear-gradient(180deg, #1a2a3d 0%, var(--night) 40%, #0b1220 100%);
-      color: var(--text); display: flex; flex-direction: column; min-height: 100%;
-    }
+    body { font-family: Nunito, system-ui, sans-serif; background: radial-gradient(1200px 500px at 20% -10%, rgba(126,200,227,.25), transparent 50%), linear-gradient(180deg, #1a2a3d 0%, var(--night) 40%, #0b1220 100%); color: var(--text); display: flex; flex-direction: column; min-height: 100%; }
     header { display:flex; align-items:center; gap:14px; padding:14px 18px; background:linear-gradient(180deg, rgba(93,155,58,.35), rgba(21,32,51,.9)); border-bottom:4px solid var(--grass-dark); }
-    .logo { width:48px; height:48px; image-rendering:pixelated; background:linear-gradient(#7dff9a 0 12px, #5d9b3a 12px 28px, #8b5a2b 28px 48px); border:3px solid #1a2a14; box-shadow:4px 4px 0 #0006; position:relative; }
-    .logo::after { content:""; position:absolute; left:10px; top:16px; width:8px; height:8px; background:#102018; box-shadow:16px 0 #102018; }
+    .logo { width:52px; height:52px; object-fit:contain; background:#0f1724; border:2px solid #5d9b3a; border-radius:12px; box-shadow:3px 3px 0 #0006; }
     .brand h1 { font-family:"Press Start 2P", system-ui, sans-serif; font-size:15px; }
     .brand p { color:var(--muted); font-size:13px; margin-top:4px; }
     .status { margin-left:auto; font-size:12px; background:#16301c; color:var(--accent); padding:6px 10px; border-radius:999px; border:1px solid #2d6a3a; }
@@ -68,7 +54,7 @@
 </head>
 <body>
   <header>
-    <div class="logo" aria-hidden="true"></div>
+    <img class="logo" src="moss-logo.png" alt="Moss logo" />
     <div class="brand">
       <h1>MOSS</h1>
       <p>Your friend AI · memory storage on this device</p>
